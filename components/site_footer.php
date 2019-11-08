@@ -4,7 +4,7 @@
         <div class="row">
             <!-- FOOTER ADDRESS -->
             <div class="col-lg-3 text-xs-sm-center">
-                <h4 class="h6">NATHAN BARTON ELEMENTARY SCHOOL</h4>
+                <h4 class="h6"><?php echo $info['school_name']; ?></h4>
                 <p class="text-uppercase"><?php echo $addr = str_replace(',', '<br>', $info['school_addr']); ?></p>
                 <hr class="d-block d-lg-none">
             </div>
@@ -37,7 +37,7 @@
     <div class="copyrights">
         <div class="row" style="padding-left: 25px; padding-right: 25px;">
             <div class="col-lg-4 text-center-md">
-                <p>&copy; 2018-2019. NBES</p>
+                <p>&copy; 2019. <?php echo $info['school_abbv']; ?> | <a href="https://www.nisgaa.bc.ca/privacy">Privacy Notice</a></p>
             </div>
             <div class="col-lg-8 text-right text-center-md">
                 <p>Template design by <a href="https://bootstrapious.com/free-templates">Bootstrapious Templates </a></p>
